@@ -55,7 +55,7 @@ buildscript {
         ANDROID_GRADLE_TOOLS_VERSION = rootProject.hasProperty('ANDROID_GRADLE_TOOLS_VERSION') ? rootProject.ext.ANDROID_GRADLE_TOOLS_VERSION : ANDROID_GRADLE_TOOLS_VERSION
         // Avoid use "GRADLE_VERSION" because jitpack sets this like a environment variable
         classpath "com.android.tools.build:gradle:${ANDROID_GRADLE_TOOLS_VERSION}"
-        classpath "com.google.gms:google-services:${ANDROID_GOOGLE_SERVICES_VERSION}"
+        //classpath "com.google.gms:google-services:${ANDROID_GOOGLE_SERVICES_VERSION}" comento esto para evitar conflictos
     }
 }
 repositories {
@@ -106,6 +106,6 @@ dependencies {
 }
 // apply plugin: 'com.google.gms.google-services'
 // class must be used instead of id(string) to be able to apply plugin from non-root gradle file
-if (!project.plugins.hasPlugin('com.google.gms.google-services')) {
+/* if (!project.plugins.hasPlugin('com.google.gms.google-services')) {
     apply plugin: com.google.gms.googleservices.GoogleServicesPlugin
-}
+} *///COMENTO ESSTO PARA EVITAR CONFLICTOS
