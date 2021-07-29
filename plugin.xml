@@ -118,14 +118,14 @@
 		<source-file src="src/ios/FCMNotificationCenterDelegate.m" />
 
 		<!-- FIREBASE COCOAPODS-->
-		<podspec>
+		<!--<podspec>
 			<config>
                 <source url="https://github.com/CocoaPods/Specs.git"/>
 			</config>
 			<pods>
 				<pod name="Firebase/Messaging" spec="$IOS_FIREBASE_MESSAGING_VERSION"/>
 			</pods>
-		</podspec>
+		</podspec>-->
 	</platform>
 
 	<!-- COPY FCM CONFIG FILES TO PLATFORM BEFORE COMPILING -->
